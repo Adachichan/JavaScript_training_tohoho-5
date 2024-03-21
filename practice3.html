@@ -21,6 +21,24 @@
         console.log(index);
         console.log(array);
       });
+
+      var arr4 = ["Red", "Green", "Blue"];
+      for (var elem of arr4.entries()) {
+        console.log(elem[0] + ":" + elem[1]);
+      }
+      for (var key of arr4.keys()) {
+        console.log(key);
+      }
+      for (var value of arr4.values()) {
+        console.log(value);
+      }
+
+      var arr5 = [1, 2, 3, 4, 5];
+      var arr6 = arr5.map(function(value, index, array) {
+        return value * 2;
+      });
+      console.log(arr6);
+
     </script>
   </body>
 </html>
