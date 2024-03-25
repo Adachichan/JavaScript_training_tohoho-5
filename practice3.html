@@ -39,6 +39,17 @@
       });
       console.log(arr6);
 
+      var arr7 = [4, 3, 9, 2, 10];
+
+      var max = arr7.reduce(function(acc, cur, index, array) {
+        console.log(acc, cur, index, array);
+
+        return (acc < cur) ? cur : acc
+
+      });
+
+      console.log(max);
+
     </script>
   </body>
 </html>
